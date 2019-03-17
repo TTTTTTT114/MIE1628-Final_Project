@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00e23fea-44b3-4a53-846e-7cb6c5c8a335" name="Default Changelist" comment="added parameter description for 'plot_time_series' function">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/stock_ann-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/stock_ann-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_funcitons.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_funcitons.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock_ann.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/stock_ann.ipynb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,13 +17,13 @@
         <entry file="file://$PROJECT_DIR$/my_funcitons.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="1196">
-                <caret line="170" column="8" selection-start-line="170" selection-start-column="8" selection-end-line="172" selection-end-column="91" />
+              <first_editor relative-caret-position="3657">
+                <caret line="159" column="10" selection-start-line="159" selection-start-column="10" selection-end-line="159" selection-end-column="10" />
                 <folding>
                   <element signature="e#0#31#0" expanded="true" />
                 </folding>
               </first_editor>
-              <second_editor relative-caret-position="-161" />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -123,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552807601650</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added function 'plot_scatter'">
+      <created>1552810532824</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552810532824</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -164,7 +168,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added my_functions.py" />
     <MESSAGE value="added parameter description for 'plot_time_series' function" />
-    <option name="LAST_COMMIT_MESSAGE" value="added parameter description for 'plot_time_series' function" />
+    <MESSAGE value="added function 'plot_scatter'" />
+    <option name="LAST_COMMIT_MESSAGE" value="added function 'plot_scatter'" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/Learning">
@@ -188,13 +193,13 @@
     <entry file="file://$PROJECT_DIR$/my_funcitons.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="1196">
-            <caret line="170" column="8" selection-start-line="170" selection-start-column="8" selection-end-line="172" selection-end-column="91" />
+          <first_editor relative-caret-position="3657">
+            <caret line="159" column="10" selection-start-line="159" selection-start-column="10" selection-end-line="159" selection-end-column="10" />
             <folding>
               <element signature="e#0#31#0" expanded="true" />
             </folding>
           </first_editor>
-          <second_editor relative-caret-position="-161" />
+          <second_editor />
         </state>
       </provider>
     </entry>
