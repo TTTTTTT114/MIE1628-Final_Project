@@ -185,7 +185,6 @@ def train_test_split(input_data, train_subset_ratio):
     train, test = input_data[0:train_size], input_data[train_size:len(input_data)]
     print('Observations: %d' % (len(input_data)))
     print("\nTrain_test split ratio: {0:.2f}%".format(train_subset_ratio * 100))
-    print("Splitting data on ", input_data.iloc[int(len(input_data) * train_subset_ratio)].name)
     print('\nTraining Observations: %d' % (len(train)))
     print('Testing Observations: %d' % (len(test)))
 

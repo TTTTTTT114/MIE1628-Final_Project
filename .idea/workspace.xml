@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00e23fea-44b3-4a53-846e-7cb6c5c8a335" name="Default Changelist" comment="proposed changes to 'plot_scatter'">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Stepan.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Stepan.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/stock_ann-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/stock_ann-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_funcitons.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_funcitons.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_ann.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/stock_ann.ipynb" afterDir="false" />
@@ -19,28 +20,10 @@
         <entry file="file://$PROJECT_DIR$/my_funcitons.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="460">
-                <caret line="191" lean-forward="true" selection-start-line="171" selection-end-line="191" />
-                <folding>
-                  <element signature="e#569#6830#0" />
-                  <element signature="e#574#4146#1" />
-                  <element signature="e#842#918#0" />
-                  <element signature="e#1050#1122#0" />
-                  <element signature="e#1274#1331#0" />
-                  <element signature="e#1355#1412#0" />
-                  <element signature="e#1442#1547#0" />
-                  <element signature="e#1572#2062#0" />
-                  <element signature="e#2085#2345#0" />
-                  <element signature="e#2370#2645#0" />
-                  <element signature="e#2673#3115#0" />
-                  <element signature="e#7029#7678#0" />
-                  <element signature="e#7029#7159#1" />
-                  <element signature="e#7739#8309#0" />
-                  <element signature="e#7731#7810#2" />
-                  <element signature="e#7354#7376#0" />
-                </folding>
+              <first_editor relative-caret-position="475">
+                <caret line="206" column="4" selection-start-line="206" selection-start-column="4" selection-end-line="206" selection-end-column="4" />
               </first_editor>
-              <second_editor />
+              <second_editor relative-caret-position="-161" />
             </state>
           </provider>
         </entry>
@@ -172,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552818363283</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added a function for train-test split of time series by point in time">
+      <created>1552820640852</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1552820640852</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -218,7 +208,8 @@
     <MESSAGE value="proposed changes to 'plot_scatter'" />
     <MESSAGE value="fixed 'plot_scatter'" />
     <MESSAGE value="added parameters for scatter alpha and an option to fit regression to 'plot_scatter'" />
-    <option name="LAST_COMMIT_MESSAGE" value="added parameters for scatter alpha and an option to fit regression to 'plot_scatter'" />
+    <MESSAGE value="added a function for train-test split of time series by point in time" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a function for train-test split of time series by point in time" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/Learning">
@@ -242,28 +233,10 @@
     <entry file="file://$PROJECT_DIR$/my_funcitons.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="460">
-            <caret line="191" lean-forward="true" selection-start-line="171" selection-end-line="191" />
-            <folding>
-              <element signature="e#569#6830#0" />
-              <element signature="e#574#4146#1" />
-              <element signature="e#842#918#0" />
-              <element signature="e#1050#1122#0" />
-              <element signature="e#1274#1331#0" />
-              <element signature="e#1355#1412#0" />
-              <element signature="e#1442#1547#0" />
-              <element signature="e#1572#2062#0" />
-              <element signature="e#2085#2345#0" />
-              <element signature="e#2370#2645#0" />
-              <element signature="e#2673#3115#0" />
-              <element signature="e#7029#7678#0" />
-              <element signature="e#7029#7159#1" />
-              <element signature="e#7739#8309#0" />
-              <element signature="e#7731#7810#2" />
-              <element signature="e#7354#7376#0" />
-            </folding>
+          <first_editor relative-caret-position="475">
+            <caret line="206" column="4" selection-start-line="206" selection-start-column="4" selection-end-line="206" selection-end-column="4" />
           </first_editor>
-          <second_editor />
+          <second_editor relative-caret-position="-161" />
         </state>
       </provider>
     </entry>
