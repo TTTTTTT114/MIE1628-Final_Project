@@ -1,21 +1,51 @@
 import matplotlib.pyplot as plt
 
 
-def plot_time_series(series_to_plot,
-                     create_plot=True, show_plot=True, summary_stats=False,
+def plot_time_series(series_to_plot, summary_stats=False,
+                     create_plot=True, show_plot=True, ax=None,
                      color='blue', linestyle='-', linewidth=1, alpha=1,
-                     title="", ylabel="", xlabel="Date", label_size=14,
+                     title="", ylabel="", xlabel="Date", tick_label_size=14,
                      x_log=False, y_log=False,
                      highlight_0=True, highlight_0_color='black',
                      minmax=True, mean=True, median=True, units="",
-                     highlight=None, caption_lift=1.03, ax=None):
+                     highlight=None, caption_lift=1.03):
     """
     a function to plot a line plot of provided time series
 
     (optional) highlights a period of time with an orange rectangle
     (optional) plots minmax, mean, median of the provided Series
     (optional) x and y axes can (separately) be set to logarithmic scales
-    :type ax: matplotlib axis
+    ------------------- plot parameters -----------------------------
+    :param series_to_plot: pandas.Series -- Series to be plotted
+    :param summary_stats:  boolean       -- whether to show summary stats for the Series
+    :param create_plot:    boolean       -- whether to create figure and axis
+                                            (set to False for subsequent plots on same axis)
+    :param show_plot:      boolean       -- whether to show the plot
+                                            (set to False for subsequent plots on same axis)
+    :param ax -- matplotlib axis -- previously created matplotlib axis
+    ----------------- main line parameters --------------------------
+    :param color:          string        -- color to be used for the main line (matplotlib)
+    :param linestyle:      string        -- linestyle to be used for the main line  (matplotlib)
+    :param linewidth:      int           -- linewidth to be used for the main line (matplotlib)
+    :param alpha:          alpha         -- alpha (transparency) to be used for the main line
+    ------------------- axis parameters -----------------------------
+    :param title:          string        -- title of the chart
+    :param xlabel:         string        -- label for x axis
+    :param ylabel:         string        -- label for y axis
+    :param tick_label_size:    int       -- size of labels on x and y ticks
+    :param y_log:          boolean       -- whether to use log scale for y
+    :param x_log:          boolean       -- whether to use log scale for x
+    ------------- highlight origin parameters -----------------------
+    :param highlight_0:    boolean       -- whether to highlight to origin (y=0)
+    :param highlight_0_color:  string    -- color used to highlight the origin
+    ----------- min, max, mean, median, units -----------------------
+    :param minmax:         boolean       -- whether to plot the min and max values
+    :param mean :          boolean       -- whether to plot the mean
+    :param median:         boolean       -- whether to plot the median
+    :param units:          string        -- units to be added at the end of captions
+
+    :param caption_lift:   float         -- value used to lift captions above lines
+    :param highlight:      list          -- list of min x and max x of plot region to highlight
     """
     if summary_stats:
         print(ylabel, "summary statistics")
@@ -72,12 +102,12 @@ def plot_time_series(series_to_plot,
     if highlight:
         ax.axvline(highlight[0], alpha=0.5)
         ax.text(highlight[0], series_to_plot.max() / 2,
-                highlight[0], fontsize=14,
-                ha='right')
+                highlight[0], ha='right',
+                fontsize=14)
         ax.axvline(highlight[1], alpha=0.5)
         ax.text(highlight[1], series_to_plot.min() / 2,
-                highlight[1], fontsize=14,
-                ha='left')
+                highlight[1], ha='left',
+                fontsize=14)
         ax.fill_between(highlight, series_to_plot.min() * 1.1,
                         series_to_plot.max() * 1.1, color='orange', alpha=0.2)
 
@@ -85,7 +115,7 @@ def plot_time_series(series_to_plot,
     ax.set_title(title, fontdict=font)
     ax.set_xlabel(xlabel, fontdict=font)
     ax.set_ylabel(ylabel, fontdict=font)
-    ax.tick_params(labelsize=label_size)
+    ax.tick_params(labelsize=tick_label_size)
 
     if show_plot:
         plt.show()
