@@ -139,24 +139,33 @@ def plot_time_series(series_to_plot, summary_stats=False,
     return
 
 
-def plot_scatter(ser1, ser2,
+def plot_scatter(ser1=None, ser2=None,
                  ser1_name="x", ser2_name="y",
-                 plot_title=""):
+                 plot_title="", tick_label_size=14):
     """
     a function to plot a scatter plot of 2 variables
     found in 'col1' and 'col2' of the
     supplied DataFrame 'df'
     """
-    plt.figure(figsize=(8, 6))
+    # set font parameters
+    font = dict(family='serif', color='darkred', weight='normal', size=16)
+
+    # set figure size
+    plt.figure(figsize=(8, 8))
+
+    # plot the scatter plot
     sns.regplot(x=ser1, y=ser2,
                 fit_reg=False,
                 scatter_kws={'alpha': 0.5})
-    plt.ylabel(ser1_name)
-    plt.xlabel(ser2_name)
-    plt.title(plot_title)
+
+    # set axis parameters
+    plt.ylabel(ser2_name, fontdict=font)
+    plt.xlabel(ser1_name, fontdict=font)
+    plt.title(plot_title, fontdict=font)
+    plt.tick_params(labelsize=tick_label_size)
+
     plt.show()
     return
-
 
 # UNFINISHED FUNCTIONS
 # #def plot_dist(ser=None, df=None,
