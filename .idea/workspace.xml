@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00e23fea-44b3-4a53-846e-7cb6c5c8a335" name="Default Changelist" comment="proposed changes to 'plot_scatter'">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/stock_ann-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/stock_ann-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_funcitons.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_funcitons.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock_ann.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/stock_ann.ipynb" afterDir="false" />
@@ -20,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/my_funcitons.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="276">
-                <caret line="71" column="4" lean-forward="true" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+              <first_editor relative-caret-position="728">
+                <caret line="168" column="10" selection-start-line="168" selection-start-column="10" selection-end-line="168" selection-end-column="10" />
               </first_editor>
               <second_editor relative-caret-position="-161" />
             </state>
@@ -141,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552811977886</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed 'plot_scatter'">
+      <created>1552814065890</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1552814065890</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -185,7 +191,8 @@
     <MESSAGE value="added function 'plot_scatter'" />
     <MESSAGE value="minor fixes" />
     <MESSAGE value="proposed changes to 'plot_scatter'" />
-    <option name="LAST_COMMIT_MESSAGE" value="proposed changes to 'plot_scatter'" />
+    <MESSAGE value="fixed 'plot_scatter'" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed 'plot_scatter'" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/Learning">
@@ -209,8 +216,8 @@
     <entry file="file://$PROJECT_DIR$/my_funcitons.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="276">
-            <caret line="71" column="4" lean-forward="true" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+          <first_editor relative-caret-position="728">
+            <caret line="168" column="10" selection-start-line="168" selection-start-column="10" selection-end-line="168" selection-end-column="10" />
           </first_editor>
           <second_editor relative-caret-position="-161" />
         </state>
