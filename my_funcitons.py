@@ -5,7 +5,7 @@ import seaborn as sns
 def plot_time_series(series_to_plot, summary_stats=False,
                      create_plot=True, show_plot=True, ax=None,
                      color='blue', linestyle='-', linewidth=1, alpha=1,
-                     title="", ylabel="", xlabel="Date", tick_label_size=14,
+                     plot_title="", ylabel="", xlabel="Date", tick_label_size=14,
                      x_log=False, y_log=False,
                      highlight_0=True, highlight_0_color='black',
                      minmax=True, mean=True, median=True, units="",
@@ -46,7 +46,7 @@ def plot_time_series(series_to_plot, summary_stats=False,
     :param linewidth:      int           -- linewidth to be used for the main line (matplotlib)
     :param alpha:          alpha         -- alpha (transparency) to be used for the main line
     ------------------- axis parameters -----------------------------
-    :param title:          string        -- title of the chart
+    :param plot_title:     string        -- title of the chart
     :param xlabel:         string        -- label for x axis
     :param ylabel:         string        -- label for y axis
     :param tick_label_size:    int       -- size of labels on x and y ticks
@@ -129,7 +129,7 @@ def plot_time_series(series_to_plot, summary_stats=False,
                         series_to_plot.max() * 1.1, color='orange', alpha=0.2)
 
     # set axis parameters
-    ax.set_title(title, fontdict=font)
+    ax.set_title(plot_title, fontdict=font)
     ax.set_xlabel(xlabel, fontdict=font)
     ax.set_ylabel(ylabel, fontdict=font)
     ax.tick_params(labelsize=tick_label_size)
@@ -139,23 +139,21 @@ def plot_time_series(series_to_plot, summary_stats=False,
     return
 
 
-def plot_scatter(df,
-                 col1, col2,
-                 col1_name="x", col2_name="y",
-                 title=""):
+def plot_scatter(ser1, ser2,
+                 ser1_name="x", ser2_name="y",
+                 plot_title=""):
     """
     a function to plot a scatter plot of 2 variables
     found in 'col1' and 'col2' of the
     supplied DataFrame 'df'
     """
-    plt.figure(figsize=(8,6))
-    ax = sns.regplot(x=col1, y=col2,
-                     fit_reg=False,
-                     scatter_kws={'alpha':0.5},
-                     data=df)
-    plt.ylabel(col2_name)
-    plt.xlabel(col1_name)
-    plt.title(title)
+    plt.figure(figsize=(8, 6))
+    sns.regplot(x=ser1, y=ser2,
+                fit_reg=False,
+                scatter_kws={'alpha': 0.5})
+    plt.ylabel(ser1_name)
+    plt.xlabel(ser2_name)
+    plt.title(plot_title)
     plt.show()
     return
 
