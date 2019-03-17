@@ -141,7 +141,8 @@ def plot_time_series(series_to_plot, summary_stats=False,
 
 def plot_scatter(ser1=None, ser2=None,
                  ser1_name="x", ser2_name="y",
-                 plot_title="", tick_label_size=14):
+                 plot_title="", tick_label_size=14,
+                 fit_reg=False, alpha=0.5):
     """
     a function to plot a scatter plot of 2 variables
     found in 'col1' and 'col2' of the
@@ -155,8 +156,8 @@ def plot_scatter(ser1=None, ser2=None,
 
     # plot the scatter plot
     sns.regplot(x=ser1, y=ser2,
-                fit_reg=False,
-                scatter_kws={'alpha': 0.5})
+                fit_reg=fit_reg,
+                scatter_kws={'alpha': alpha})
 
     # set axis parameters
     plt.ylabel(ser2_name, fontdict=font)
