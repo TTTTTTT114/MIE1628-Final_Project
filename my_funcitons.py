@@ -136,6 +136,7 @@ def plot_time_series(series_to_plot, summary_stats=False,
 
     if show_plot:
         plt.show()
+    return
 
 
 def plot_scatter(df,
@@ -156,6 +157,7 @@ def plot_scatter(df,
     plt.xlabel(col1_name)
     plt.title(title)
     plt.show()
+    return
 
 
 # UNFINISHED FUNCTIONS
