@@ -19,10 +19,28 @@
         <entry file="file://$PROJECT_DIR$/my_funcitons.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="728">
-                <caret line="168" column="10" selection-start-line="168" selection-start-column="10" selection-end-line="168" selection-end-column="10" />
+              <first_editor relative-caret-position="460">
+                <caret line="191" lean-forward="true" selection-start-line="171" selection-end-line="191" />
+                <folding>
+                  <element signature="e#569#6830#0" />
+                  <element signature="e#574#4146#1" />
+                  <element signature="e#842#918#0" />
+                  <element signature="e#1050#1122#0" />
+                  <element signature="e#1274#1331#0" />
+                  <element signature="e#1355#1412#0" />
+                  <element signature="e#1442#1547#0" />
+                  <element signature="e#1572#2062#0" />
+                  <element signature="e#2085#2345#0" />
+                  <element signature="e#2370#2645#0" />
+                  <element signature="e#2673#3115#0" />
+                  <element signature="e#7029#7678#0" />
+                  <element signature="e#7029#7159#1" />
+                  <element signature="e#7739#8309#0" />
+                  <element signature="e#7731#7810#2" />
+                  <element signature="e#7354#7376#0" />
+                </folding>
               </first_editor>
-              <second_editor relative-caret-position="-161" />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -147,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552814065890</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added parameters for scatter alpha and an option to fit regression to 'plot_scatter'">
+      <created>1552818363283</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1552818363283</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -192,7 +217,8 @@
     <MESSAGE value="minor fixes" />
     <MESSAGE value="proposed changes to 'plot_scatter'" />
     <MESSAGE value="fixed 'plot_scatter'" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed 'plot_scatter'" />
+    <MESSAGE value="added parameters for scatter alpha and an option to fit regression to 'plot_scatter'" />
+    <option name="LAST_COMMIT_MESSAGE" value="added parameters for scatter alpha and an option to fit regression to 'plot_scatter'" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/Learning">
@@ -216,10 +242,28 @@
     <entry file="file://$PROJECT_DIR$/my_funcitons.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="728">
-            <caret line="168" column="10" selection-start-line="168" selection-start-column="10" selection-end-line="168" selection-end-column="10" />
+          <first_editor relative-caret-position="460">
+            <caret line="191" lean-forward="true" selection-start-line="171" selection-end-line="191" />
+            <folding>
+              <element signature="e#569#6830#0" />
+              <element signature="e#574#4146#1" />
+              <element signature="e#842#918#0" />
+              <element signature="e#1050#1122#0" />
+              <element signature="e#1274#1331#0" />
+              <element signature="e#1355#1412#0" />
+              <element signature="e#1442#1547#0" />
+              <element signature="e#1572#2062#0" />
+              <element signature="e#2085#2345#0" />
+              <element signature="e#2370#2645#0" />
+              <element signature="e#2673#3115#0" />
+              <element signature="e#7029#7678#0" />
+              <element signature="e#7029#7159#1" />
+              <element signature="e#7739#8309#0" />
+              <element signature="e#7731#7810#2" />
+              <element signature="e#7354#7376#0" />
+            </folding>
           </first_editor>
-          <second_editor relative-caret-position="-161" />
+          <second_editor />
         </state>
       </provider>
     </entry>
