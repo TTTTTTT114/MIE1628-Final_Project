@@ -168,6 +168,28 @@ def plot_scatter(ser1=None, ser2=None,
     plt.show()
     return
 
+
+def train_test_split(input_data, train_subset_ratio):
+    """
+
+    :param input_data:  -- data to be split
+    :param train_subset_ratio:  -- ratio to used to generate training subset
+    :return: train -- training subset
+             test  -- testing subset
+
+    """
+    # set train subset ratio
+    train_size = int(len(input_data) * train_subset_ratio)
+
+    # split the data set into train and test
+    train, test = input_data[0:train_size], input_data[train_size:len(input_data)]
+    print('Observations: %d' % (len(input_data)))
+    print("\nTrain_test split ratio: {0:.2f}%".format(train_subset_ratio * 100))
+    print('\nTraining Observations: %d' % (len(train)))
+    print('Testing Observations: %d' % (len(test)))
+
+    return train, test
+
 # UNFINISHED FUNCTIONS
 # #def plot_dist(ser=None, df=None,
 # #              hist=True, bins=10, kde=True, rug=True,
