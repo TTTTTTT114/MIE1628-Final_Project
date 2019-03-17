@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 def plot_time_series(series_to_plot, summary_stats=False,
@@ -15,6 +16,21 @@ def plot_time_series(series_to_plot, summary_stats=False,
     (optional) highlights a period of time with an orange rectangle
     (optional) plots minmax, mean, median of the provided Series
     (optional) x and y axes can (separately) be set to logarithmic scales
+
+    can be used to plot several lines on the same plot
+    via several calls to this function
+    parameters 'create_plot', 'show_plot', and 'ax' are used to control
+    several plots as follows:
+
+    if only one line --'create_plot' = True, 'show_plot' = True
+                                        (default)
+    if more then one line -- first plot -- create_plot = True, show_plot = False
+                       subsequent plots -- create_plot = False, show_plot = False
+                                           need to get axis created from the first plot
+                                           through ax = plt.gca()
+                                           and provide to this function in the second call
+                                           as ax = ax
+                             final plot    create_plot = False, show_plot = True, ax = ax
     ------------------- plot parameters -----------------------------
     :param series_to_plot: pandas.Series -- Series to be plotted
     :param summary_stats:  boolean       -- whether to show summary stats for the Series
@@ -22,7 +38,8 @@ def plot_time_series(series_to_plot, summary_stats=False,
                                             (set to False for subsequent plots on same axis)
     :param show_plot:      boolean       -- whether to show the plot
                                             (set to False for subsequent plots on same axis)
-    :param ax -- matplotlib axis -- previously created matplotlib axis
+    :param ax:          matplotlib axis  -- if provided, plot on this axis
+                                            (if subsequent plot, provide ax)
     ----------------- main line parameters --------------------------
     :param color:          string        -- color to be used for the main line (matplotlib)
     :param linestyle:      string        -- linestyle to be used for the main line  (matplotlib)
@@ -119,3 +136,61 @@ def plot_time_series(series_to_plot, summary_stats=False,
 
     if show_plot:
         plt.show()
+
+
+def plot_scatter(df,
+                 col1, col2,
+                 col1_name="x", col2_name="y",
+                 title=""):
+    """
+    a function to plot a scatter plot of 2 variables
+    found in 'col1' and 'col2' of the
+    supplied DataFrame 'df'
+    """
+    plt.figure(figsize=(8,6))
+    ax = sns.regplot(x=col1, y=col2,
+                     fit_reg=False,
+                     scatter_kws={'alpha':0.5},
+                     data=df)
+    plt.ylabel(col2_name)
+    plt.xlabel(col1_name)
+    plt.title(title)
+    plt.show()
+
+
+# UNFINISHED FUNCTIONS
+# #def plot_dist(ser=None, df=None,
+# #              hist=True, bins=10, kde=True, rug=True,
+#               vertical=False,
+#               create_plot=True, show_plot=True, ax=None):
+#     """
+#     a function to plot distribution plot of the provided Series,
+#     or distribution plots of all Series in the provided DataFrame
+#     :param ser:            pandas.Series -- Series to be plotted
+#     :param df:
+#     :param hist:
+#     :param bins:
+#     :param kde:
+#     :param rug:
+#     :param vertical:
+#     :param create_plot:    boolean       -- whether to create figure and axis
+#                                             (set to False for subsequent plots on same axis)
+#     :param show_plot:      boolean       -- whether to show the plot
+#                                             (set to False for subsequent plots on same axis)
+#     :param ax:          matplotlib axis  -- if provided, plot on this axis
+#                                             (if subsequent plot, provide ax)
+#     :return:
+#     """
+#     if ser:
+#
+#         # plot the distribution plot for the provided Series
+#         sns.distplot(ser, hist=hist, kde=kde, bins=bins, rug=rug, vertical=vertical)
+#
+#     if df:
+#
+#         # loop over all columns in the DataFrame
+#         for column in df.columns:
+#             # plot the distribution plot for each column
+#             sns.distplot(column, hist=hist, kde=kde, bins=bins, rug=rug, vertical=vertical)
+#
+#     plt.show()
